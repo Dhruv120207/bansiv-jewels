@@ -937,3 +937,178 @@ padding:60px 30px;
 
 
 }
+
+/*==========================
+        MOBILE RESPONSIVE
+==========================*/
+
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    /* HEADER */
+
+    header{
+        flex-direction:column;
+        padding:15px;
+        text-align:center;
+    }
+
+
+    nav{
+        margin-top:15px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+
+    nav a{
+        font-size:14px;
+    }
+
+
+
+    /* HERO SECTION */
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:30px 15px;
+    }
+
+
+    .hero h1{
+        font-size:32px;
+    }
+
+
+    .hero p{
+        font-size:15px;
+    }
+
+
+    .hero img{
+        width:90%;
+        margin-top:20px;
+    }
+
+
+
+    /* PRODUCT GRID */
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+        padding:15px;
+    }
+
+
+    .product-card{
+        padding:12px;
+    }
+
+
+    .product-card img{
+        width:100%;
+        height:auto;
+    }
+
+
+
+    /* BUTTONS */
+
+    button{
+        width:100%;
+        padding:12px;
+        font-size:15px;
+    }
+
+
+
+    /* FORM */
+
+    .form-container{
+
+        width:95%;
+        margin:auto;
+
+    }
+
+
+    input,
+    textarea,
+    select{
+
+        width:100%;
+        font-size:16px;
+
+    }
+
+
+
+    /* TABLE RESPONSIVE */
+
+    table{
+
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer{
+
+        text-align:center;
+        padding:20px;
+
+    }
+
+}
+
+
+
+
+/* SMALL MOBILE */
+
+@media screen and (max-width:480px){
+
+
+    .products{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .hero h1{
+
+        font-size:26px;
+
+    }
+
+
+    h2{
+
+        font-size:22px;
+
+    }
+
+
+    .container{
+
+        width:100%;
+        padding:10px;
+
+    }
+
+
+}
