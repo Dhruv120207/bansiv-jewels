@@ -1,52 +1,56 @@
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 body{
 
-background:#FFF9F6;
+    background:#FFF9F6;
 
-font-family:'Poppins',sans-serif;
+    font-family:'Poppins',sans-serif;
 
-overflow-x:hidden;
+    overflow-x:hidden;
 
-color:#3A3532;
+    color:#3A3532;
 
 }
 
 
+
+
+
 /*==========================
-         NAVBAR
+            NAVBAR
 ==========================*/
 
 
 nav{
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
 
-padding: 8px 8%;
+    justify-content:space-between;
 
-position:fixed;
+    align-items:center;
 
-width:100%;
+    padding:8px 8%;
 
-top:0;
-left:0;
+    position:fixed;
 
-background:rgba(255,255,255,.75);
+    width:100%;
 
-backdrop-filter:blur(25px);
+    top:0;
 
-z-index:1000;
+    left:0;
 
-transition:.5s;
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(25px);
+
+    z-index:1000;
+
+    transition:.5s;
 
 }
 
@@ -54,18 +58,19 @@ transition:.5s;
 
 .logo img{
 
-width:110px;
+    width:110px;
 
-cursor:pointer;
+    cursor:pointer;
 
-transition:.5s;
+    transition:.5s;
 
 }
 
 
+
 .logo img:hover{
 
-transform:scale(1.05);
+    transform:scale(1.05);
 
 }
 
@@ -73,361 +78,723 @@ transform:scale(1.05);
 
 nav ul{
 
-display:flex;
-gap:35px;
+    display:flex;
 
-list-style:none;
+    gap:35px;
+
+    list-style:none;
 
 }
+
 
 
 nav ul li a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:#3A3532;
+    color:#3A3532;
 
-font-size:17px;
+    font-size:17px;
 
-font-weight:500;
+    font-weight:500;
 
-position:relative;
+    position:relative;
 
-transition:.5s;
+    transition:.5s;
 
 }
+
 
 
 nav ul li a:hover{
 
-color:#D4C2A8;
+    color:#D4C2A8;
 
 }
+
 
 
 nav ul li a::after{
 
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-left:0;
-bottom:-8px;
+    left:0;
 
-width:0%;
+    bottom:-8px;
 
-height:2px;
+    width:0%;
 
-background:#D4C2A8;
+    height:2px;
 
-transition:.5s;
+    background:#D4C2A8;
+
+    transition:.5s;
 
 }
+
 
 
 nav ul li a:hover::after{
 
-width:100%;
+    width:100%;
 
 }
 
-/* HEADING */
+
+
+
+
+
+/*==========================
+            HEADING
+==========================*/
 
 
 .heading{
 
-padding:150px 10%;
+    padding:150px 10%;
 
-text-align:center;
+    text-align:center;
 
 }
+
 
 
 .heading h1{
 
-font-size:75px;
+    font-size:75px;
 
-font-family:'Playfair Display',serif;
+    font-family:'Playfair Display',serif;
 
-margin-bottom:20px;
+    margin-bottom:20px;
 
 }
+
 
 
 .heading p{
 
-font-size:25px;
+    font-size:25px;
 
-color:#777;
+    color:#777;
 
 }
 
 
 
 
-/* STORY */
+
+
+
+/*==========================
+            STORY
+==========================*/
 
 
 .story{
 
-display:flex;
+    display:flex;
 
-justify-content:center;
+    justify-content:center;
 
-align-items:center;
+    align-items:center;
 
-gap:100px;
+    gap:100px;
 
-padding:100px 10%;
+    padding:100px 10%;
 
 }
+
 
 
 .reverse{
 
-flex-direction:row-reverse;
+    flex-direction:row-reverse;
 
 }
+
+
+
 
 
 .image{
 
-flex:1;
+    flex:1;
 
 }
+
 
 
 .image img{
 
-width:100%;
+    width:100%;
 
-border-radius:30px;
+    border-radius:30px;
 
-box-shadow:
+    box-shadow:
 
-0 20px 50px rgba(0,0,0,.08);
+    0 20px 50px rgba(0,0,0,.08);
 
-transition:.7s;
+    transition:.7s;
 
 }
+
 
 
 .image img:hover{
 
-transform:scale(1.04);
+    transform:scale(1.04);
 
 }
+
+
 
 
 
 .details{
 
-flex:1;
+    flex:1;
 
 }
+
 
 
 .details h2{
 
-font-size:55px;
+    font-size:55px;
 
-font-family:'Playfair Display',serif;
+    font-family:'Playfair Display',serif;
 
-margin-bottom:30px;
+    margin-bottom:30px;
 
 }
+
 
 
 .details p{
 
-font-size:20px;
+    font-size:20px;
 
-line-height:40px;
+    line-height:40px;
 
-color:#666;
+    color:#666;
 
 }
 
 
 
 
-/* WHY US */
+
+
+
+/*==========================
+            WHY US
+==========================*/
 
 
 .why{
 
-padding:120px 10%;
+    padding:120px 10%;
 
-text-align:center;
+    text-align:center;
 
-background:#FAEFEC;
+    background:#FAEFEC;
 
 }
+
 
 
 .why h2{
 
-font-size:60px;
+    font-size:60px;
 
-font-family:'Playfair Display',serif;
+    font-family:'Playfair Display',serif;
 
-margin-bottom:50px;
+    margin-bottom:50px;
 
 }
+
 
 
 .box p{
 
-font-size:22px;
+    font-size:22px;
 
-margin-bottom:25px;
+    margin-bottom:25px;
 
 }
 
 
 
 
-/* CONTACT */
+
+
+
+/*==========================
+            CONTACT
+==========================*/
 
 
 .contact{
 
-padding:150px 10%;
+    padding:150px 10%;
 
-text-align:center;
+    text-align:center;
 
 }
+
 
 
 .contact h2{
 
-font-size:50px;
+    font-size:50px;
 
-line-height:80px;
+    line-height:80px;
 
-font-family:'Playfair Display',serif;
+    font-family:'Playfair Display',serif;
 
-margin-bottom:50px;
+    margin-bottom:50px;
 
 }
+
 
 
 .contact a{
 
-text-decoration:none;
+    text-decoration:none;
 
-padding:18px 40px;
+    padding:18px 40px;
 
-background:#D4C2A8;
+    background:#D4C2A8;
 
-color:white;
+    color:white;
 
-border-radius:50px;
+    border-radius:50px;
 
-transition:.5s;
+    transition:.5s;
 
 }
+
 
 
 .contact a:hover{
 
-background:#EED5CC;
+    background:#EED5CC;
 
-color:#3A3532;
+    color:#3A3532;
 
 }
 
 
 
 
-/* FOOTER */
+
+
+/*==========================
+            FOOTER
+==========================*/
 
 
 footer{
 
-padding:80px;
+    padding:80px;
 
-text-align:center;
+    text-align:center;
 
-background:#FAEFEC;
+    background:#FAEFEC;
 
 }
+
 
 
 footer h2{
 
-font-size:40px;
+    font-size:40px;
 
-font-family:'Playfair Display',serif;
+    font-family:'Playfair Display',serif;
 
-margin-bottom:20px;
+    margin-bottom:20px;
 
 }
+
 
 
 footer p{
 
-margin-top:10px;
+    margin-top:10px;
 
 }
 
 
 
 
-/* MOBILE */
+
+
+
+/*==========================
+          TABLET VIEW
+==========================*/
+
+
+@media(max-width:900px){
+
+
+.heading h1{
+
+    font-size:55px;
+
+}
+
+
+
+.story{
+
+    gap:50px;
+
+    padding:80px 7%;
+
+}
+
+
+
+.details h2{
+
+    font-size:42px;
+
+}
+
+
+
+.details p{
+
+    font-size:18px;
+
+    line-height:32px;
+
+}
+
+
+
+.why h2{
+
+    font-size:45px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+/*==========================
+          MOBILE VIEW
+==========================*/
 
 
 @media(max-width:768px){
 
 
-.story{
 
-flex-direction:column;
+nav{
 
-gap:50px;
-
-padding:60px 8%;
+    padding:10px 5%;
 
 }
 
 
-.reverse{
 
-flex-direction:column;
+.logo img{
+
+    width:85px;
 
 }
+
+
+
+nav ul{
+
+    gap:15px;
+
+}
+
+
+
+nav ul li a{
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* Heading */
+
+
+.heading{
+
+    padding:120px 6% 60px;
+
+}
+
 
 
 .heading h1{
 
-font-size:50px;
+    font-size:38px;
+
+    line-height:1.2;
 
 }
+
+
+
+.heading p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* Story */
+
+
+.story{
+
+    flex-direction:column;
+
+    gap:35px;
+
+    padding:60px 6%;
+
+    text-align:center;
+
+}
+
+
+
+.reverse{
+
+    flex-direction:column;
+
+}
+
+
+
+.image{
+
+    width:100%;
+
+}
+
+
+
+.image img{
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+/* Details */
+
+
+.details{
+
+    width:100%;
+
+}
+
 
 
 .details h2{
 
-font-size:35px;
+    font-size:32px;
+
+    margin-bottom:15px;
 
 }
+
 
 
 .details p{
 
-font-size:18px;
+    font-size:16px;
 
-line-height:32px;
+    line-height:28px;
 
 }
+
+
+
+
+
+/* Why */
+
+
+.why{
+
+    padding:70px 6%;
+
+}
+
+
+
+.why h2{
+
+    font-size:35px;
+
+}
+
+
+
+.box p{
+
+    font-size:16px;
+
+}
+
+
+
+
+
+
+/* Contact */
+
+
+.contact{
+
+    padding:80px 6%;
+
+}
+
 
 
 .contact h2{
 
-font-size:35px;
+    font-size:32px;
 
-line-height:55px;
+    line-height:45px;
 
 }
+
+
+
+.contact a{
+
+    padding:14px 30px;
+
+}
+
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    padding:50px 20px;
+
+}
+
+
+
+footer h2{
+
+    font-size:30px;
+
+}
+
+
+
+footer p{
+
+    font-size:14px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/*==========================
+       SMALL MOBILE
+==========================*/
+
+
+@media(max-width:400px){
+
+
+
+.logo img{
+
+    width:75px;
+
+}
+
+
+
+nav ul{
+
+    gap:8px;
+
+}
+
+
+
+nav ul li a{
+
+    font-size:12px;
+
+}
+
+
+
+.heading h1{
+
+    font-size:32px;
+
+}
+
+
+
+.details h2{
+
+    font-size:28px;
+
+}
+
+
+
+.contact h2{
+
+    font-size:28px;
+
+}
+
 
 
 }

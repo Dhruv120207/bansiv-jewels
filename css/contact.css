@@ -1,51 +1,48 @@
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 body{
 
-background:#FFF9F6;
-overflow-x:hidden;
-color:#3A3532;
-
-font-family:'Poppins',sans-serif;
+    background:#FFF9F6;
+    overflow-x:hidden;
+    color:#3A3532;
+    font-family:'Poppins',sans-serif;
 
 }
 
 
 
 /*==========================
-         NAVBAR
+            NAVBAR
 ==========================*/
 
 
 nav{
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 
-padding:8px 8%;
+    padding:8px 8%;
 
-position:fixed;
+    position:fixed;
 
-width:100%;
+    width:100%;
 
-top:0;
-left:0;
+    top:0;
+    left:0;
 
-background:rgba(255,255,255,.75);
+    background:rgba(255,255,255,.75);
 
-backdrop-filter:blur(25px);
+    backdrop-filter:blur(25px);
 
-z-index:1000;
+    z-index:1000;
 
-transition:.5s;
+    transition:.5s;
 
 }
 
@@ -53,259 +50,275 @@ transition:.5s;
 
 .logo img{
 
-width:110px;
+    width:110px;
 
-cursor:pointer;
+    cursor:pointer;
 
-transition:.5s;
+    transition:.5s;
 
 }
 
 
 .logo img:hover{
 
-transform:scale(1.05);
+    transform:scale(1.05);
 
 }
+
 
 
 
 nav ul{
 
-display:flex;
-gap:35px;
+    display:flex;
 
-list-style:none;
+    gap:35px;
+
+    list-style:none;
 
 }
+
 
 
 nav ul li a{
 
-text-decoration:none;
+    text-decoration:none;
 
-color:#3A3532;
+    color:#3A3532;
 
-font-size:17px;
+    font-size:17px;
 
-font-weight:500;
+    font-weight:500;
 
-position:relative;
+    position:relative;
 
-transition:.5s;
+    transition:.5s;
 
 }
+
 
 
 nav ul li a:hover{
 
-color:#D4C2A8;
+    color:#D4C2A8;
 
 }
+
 
 
 nav ul li a::after{
 
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-left:0;
-bottom:-8px;
+    left:0;
 
-width:0%;
+    bottom:-8px;
 
-height:2px;
+    width:0%;
 
-background:#D4C2A8;
+    height:2px;
 
-transition:.5s;
+    background:#D4C2A8;
+
+    transition:.5s;
 
 }
+
 
 
 nav ul li a:hover::after{
 
-width:100%;
+    width:100%;
 
 }
 
 
-/* HEADING */
+
+
+
+/*==========================
+            HEADING
+==========================*/
 
 
 .heading{
 
-padding:150px 10%;
-text-align:center;
+    padding:150px 10%;
+
+    text-align:center;
 
 }
+
 
 
 .heading h1{
 
-font-size:70px;
+    font-size:70px;
 
-font-family:'Playfair Display',serif;
+    font-family:'Playfair Display',serif;
 
-margin-bottom:25px;
+    margin-bottom:25px;
 
 }
+
 
 
 .heading p{
 
-font-size:25px;
-color:#777;
+    font-size:25px;
 
-margin-bottom:25px;
+    color:#777;
+
+    margin-bottom:25px;
 
 }
+
 
 
 .heading h3{
 
-font-size:22px;
+    font-size:22px;
 
-font-weight:400;
+    font-weight:400;
 
-line-height:40px;
+    line-height:40px;
 
 }
 
 
 
 
-/* CONTACT CARDS */
+
+/*==========================
+        CONTACT CARDS
+==========================*/
 
 
 .contact-container{
 
-padding:80px 10%;
+    padding:80px 10%;
 
-display:grid;
+    display:grid;
 
-grid-template-columns:
+    grid-template-columns:
+    repeat(auto-fit,minmax(350px,1fr));
 
-repeat(auto-fit,minmax(350px,1fr));
-
-gap:40px;
+    gap:40px;
 
 }
+
 
 
 .card{
 
-background:white;
+    background:white;
 
-padding:50px;
+    padding:50px;
 
-border-radius:30px;
+    border-radius:30px;
 
-box-shadow:
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.05);
 
-0 20px 50px
-rgba(0,0,0,.05);
+    transition:.6s;
 
-transition:.6s;
-
-text-align:center;
+    text-align:center;
 
 }
+
 
 
 .card:hover{
 
-transform:
-
-translateY(-10px);
+    transform:translateY(-10px);
 
 }
+
 
 
 .card h2{
 
-font-size:35px;
+    font-size:35px;
 
-margin-bottom:25px;
+    margin-bottom:25px;
 
-font-family:
-
-'Playfair Display',serif;
+    font-family:'Playfair Display',serif;
 
 }
+
 
 
 .card p{
 
-font-size:20px;
+    font-size:20px;
 
-line-height:35px;
+    line-height:35px;
 
-margin-bottom:30px;
+    margin-bottom:30px;
 
-color:#666;
+    color:#666;
 
 }
+
 
 
 
 .card a{
 
-text-decoration:none;
+    text-decoration:none;
 
-padding:18px 35px;
+    padding:18px 35px;
 
-background:#D4C2A8;
+    background:#D4C2A8;
 
-color:white;
+    color:white;
 
-border-radius:50px;
+    border-radius:50px;
 
-display:inline-block;
+    display:inline-block;
 
-transition:.5s;
+    transition:.5s;
 
 }
+
 
 
 .card a:hover{
 
+    background:#EED5CC;
 
-background:#EED5CC;
-
-color:#3A3532;
-
+    color:#3A3532;
 
 }
 
 
 
 
-/* SOCIAL */
+
+/*==========================
+            SOCIAL
+==========================*/
 
 
 .social{
 
+    padding:120px 10%;
 
-padding:120px 10%;
-
-text-align:center;
-
+    text-align:center;
 
 }
 
 
+
 .social h1{
 
+    font-size:60px;
 
-font-size:60px;
+    font-family:'Playfair Display',serif;
 
-font-family:
-'Playfair Display',serif;
-
-margin-bottom:50px;
-
+    margin-bottom:50px;
 
 }
 
@@ -313,15 +326,13 @@ margin-bottom:50px;
 
 .social-links{
 
+    display:flex;
 
-display:flex;
+    justify-content:center;
 
-justify-content:center;
+    gap:40px;
 
-gap:40px;
-
-flex-wrap:wrap;
-
+    flex-wrap:wrap;
 
 }
 
@@ -329,127 +340,386 @@ flex-wrap:wrap;
 
 .social-links a{
 
+    text-decoration:none;
 
-text-decoration:none;
+    padding:18px 35px;
 
-padding:18px 35px;
+    border-radius:50px;
 
-border-radius:50px;
+    background:white;
 
-background:white;
+    color:#3A3532;
 
-color:#3A3532;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.05);
 
-box-shadow:
-0 15px 40px rgba(0,0,0,.05);
-
-transition:.5s;
-
+    transition:.5s;
 
 }
+
 
 
 .social-links a:hover{
 
+    transform:translateY(-5px);
 
-transform:
+    background:#D4C2A8;
 
-translateY(-5px);
-
-
-background:#D4C2A8;
-
-color:white;
-
+    color:white;
 
 }
 
 
 
 
-/* FOOTER */
+
+/*==========================
+            FOOTER
+==========================*/
 
 
 footer{
 
+    padding:80px;
 
-padding:80px;
+    text-align:center;
 
-text-align:center;
-
-background:#FAEFEC;
-
+    background:#FAEFEC;
 
 }
+
 
 
 footer h2{
 
+    font-size:40px;
 
-font-size:40px;
+    font-family:'Playfair Display',serif;
 
-font-family:
-'Playfair Display',serif;
-
-margin-bottom:20px;
-
+    margin-bottom:20px;
 
 }
+
 
 
 footer p{
 
-
-margin-top:10px;
-
+    margin-top:10px;
 
 }
 
 
 
 
-/* MOBILE */
+
+/*==========================
+          TABLET VIEW
+==========================*/
 
 
-@media(max-width:768px){
+@media(max-width:900px){
 
 
 .heading h1{
 
-
-font-size:45px;
-
-
-}
-
-
-.heading h3{
-
-
-font-size:18px;
-
-line-height:30px;
-
+    font-size:55px;
 
 }
 
 
 .contact-container{
 
+    padding:70px 7%;
 
-grid-template-columns:1fr;
+}
 
+
+.card{
+
+    padding:40px;
 
 }
 
 
 .social h1{
 
+    font-size:50px;
 
-font-size:40px;
+}
 
 
 }
+
+
+
+
+
+/*==========================
+          MOBILE VIEW
+==========================*/
+
+
+@media(max-width:768px){
+
+
+
+nav{
+
+    padding:10px 5%;
+
+}
+
+
+
+.logo img{
+
+    width:85px;
+
+}
+
+
+
+nav ul{
+
+    gap:15px;
+
+}
+
+
+
+nav ul li a{
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* Heading */
+
+
+.heading{
+
+    padding:120px 6% 60px;
+
+}
+
+
+
+.heading h1{
+
+    font-size:38px;
+
+}
+
+
+
+.heading p{
+
+    font-size:18px;
+
+}
+
+
+
+.heading h3{
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+
+
+
+
+/* Cards */
+
+
+.contact-container{
+
+    padding:50px 6%;
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    padding:30px 20px;
+
+    border-radius:20px;
+
+}
+
+
+
+.card h2{
+
+    font-size:28px;
+
+}
+
+
+
+.card p{
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+
+
+.card a{
+
+    padding:14px 28px;
+
+    font-size:15px;
+
+}
+
+
+
+
+
+/* Social */
+
+
+.social{
+
+    padding:70px 6%;
+
+}
+
+
+
+.social h1{
+
+    font-size:35px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.social-links{
+
+    gap:20px;
+
+}
+
+
+
+.social-links a{
+
+    padding:14px 25px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+    padding:50px 20px;
+
+}
+
+
+
+footer h2{
+
+    font-size:30px;
+
+}
+
+
+
+footer p{
+
+    font-size:14px;
+
+}
+
+
+
+}
+
+
+
+
+
+/*==========================
+       SMALL MOBILE
+==========================*/
+
+
+@media(max-width:400px){
+
+
+
+.logo img{
+
+    width:75px;
+
+}
+
+
+
+nav ul{
+
+    gap:8px;
+
+}
+
+
+
+nav ul li a{
+
+    font-size:12px;
+
+}
+
+
+
+.heading h1{
+
+    font-size:32px;
+
+}
+
+
+
+.social h1{
+
+    font-size:30px;
+
+}
+
+
+
+.card h2{
+
+    font-size:25px;
+
+}
+
 
 
 }
