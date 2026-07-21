@@ -10,14 +10,13 @@ box-sizing:border-box;
 body{
 
 background:#FFF9F6;
+overflow-x:hidden;
+color:#3A3532;
 
 font-family:'Poppins',sans-serif;
 
-overflow-x:hidden;
-
-color:#3A3532;
-
 }
+
 
 
 /*==========================
@@ -132,41 +131,31 @@ width:100%;
 }
 
 
-
-
-
-
-
-
 /* HEADING */
 
 
 .heading{
 
 padding:150px 10%;
-
 text-align:center;
 
 }
 
 
-
 .heading h1{
 
 font-size:70px;
-
-font-family:'Playfair Display',serif;
-
 margin-bottom:20px;
 
-}
+font-family:
+'Playfair Display',serif;
 
+}
 
 
 .heading p{
 
 font-size:25px;
-
 color:#777;
 
 }
@@ -174,24 +163,21 @@ color:#777;
 
 
 
+/* PIECES */
 
-/* PRODUCTS */
 
-
-.product{
-
-padding:80px 10%;
+.piece{
 
 display:flex;
 
 justify-content:center;
-
 align-items:center;
 
 gap:100px;
 
-}
+padding:100px 10%;
 
+}
 
 
 .reverse{
@@ -201,14 +187,11 @@ flex-direction:row-reverse;
 }
 
 
-
-
 .image{
 
 flex:1;
 
 }
-
 
 
 .image img{
@@ -221,17 +204,19 @@ transition:.7s;
 
 box-shadow:
 
-0 20px 50px rgba(0,0,0,.08);
+0 25px 60px
+rgba(0,0,0,.08);
 
 }
 
 
 .image img:hover{
 
-transform:scale(1.04);
+transform:
+
+scale(1.04);
 
 }
-
 
 
 
@@ -245,14 +230,14 @@ flex:1;
 
 .details h2{
 
-font-size:50px;
+font-size:55px;
 
 margin-bottom:25px;
 
-font-family:'Playfair Display',serif;
+font-family:
+'Playfair Display',serif;
 
 }
-
 
 
 .details p{
@@ -261,18 +246,18 @@ font-size:20px;
 
 line-height:40px;
 
-margin-bottom:30px;
-
 color:#666;
+
+margin-bottom:30px;
 
 }
 
 
 .details h4{
 
-margin-bottom:30px;
-
 font-size:22px;
+
+margin-bottom:35px;
 
 color:#D4C2A8;
 
@@ -280,51 +265,36 @@ color:#D4C2A8;
 
 
 
-
 .details a{
-
 
 text-decoration:none;
 
-
 padding:18px 35px;
-
-
-background:#D4C2A8;
-
-
-color:white;
-
 
 border-radius:50px;
 
+background:#D4C2A8;
 
-transition:.5s;
-
+color:white;
 
 display:inline-block;
 
+transition:.5s;
 
 }
 
 
-
 .details a:hover{
-
 
 transform:
 
 translateY(-5px);
 
-
 background:#EED5CC;
-
 
 color:#3A3532;
 
-
 }
-
 
 
 
@@ -334,45 +304,34 @@ color:#3A3532;
 
 footer{
 
+padding:80px;
 
 margin-top:80px;
 
-
-padding:80px;
-
-
 text-align:center;
 
-
 background:#FAEFEC;
-
 
 }
 
 
 footer h2{
 
-
 font-size:40px;
-
-
-font-family:'Playfair Display',serif;
-
 
 margin-bottom:20px;
 
+font-family:
+'Playfair Display',serif;
 
 }
 
 
 footer p{
 
-
 margin-top:10px;
 
-
 }
-
 
 
 
@@ -384,11 +343,10 @@ margin-top:10px;
 @media(max-width:768px){
 
 
-.product{
+.piece{
 
 
 flex-direction:column;
-
 
 gap:50px;
 
@@ -397,7 +355,6 @@ padding:60px 8%;
 
 
 }
-
 
 
 .reverse{
@@ -409,7 +366,6 @@ flex-direction:column;
 }
 
 
-
 .heading h1{
 
 
@@ -417,7 +373,6 @@ font-size:45px;
 
 
 }
-
 
 
 .details h2{
@@ -433,7 +388,6 @@ font-size:35px;
 
 
 font-size:18px;
-
 
 line-height:32px;
 
