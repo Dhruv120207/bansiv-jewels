@@ -322,6 +322,14 @@ window.addEventListener("load", () => {
 
 
     }
+    document.querySelectorAll('.reel-card video').forEach(video => {
+  const card = video.closest('.reel-card');
+  card.addEventListener('mouseenter', () => video.play());
+  card.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
 
 
 });
