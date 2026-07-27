@@ -1,6 +1,25 @@
 /*==========================
         GOOGLE RESET
 ==========================*/
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.logo-img {
+  height: 40px; /* adjust to your logo size */
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+  color: #1a1a1a; /* adjust to match your theme */
+}
 
 *{
     margin:0;
